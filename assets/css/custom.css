@@ -1,0 +1,22 @@
+.pyramidal-background {
+    background-color: #45C4A0;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(45deg, #45C4A0, #C6ECE2);
+      background-size: 400% 400%;
+      background-position: 0% 50%;
+    }
+    50% {
+      background: linear-gradient(45deg, #45C4A0, #C6ECE2);
+      background-size: 400% 400%;
+      background-position: 100% 50%;
+    }
+    100% {
+      background: linear-gradient(45deg, #45C4A0, #C6ECE2);
+      background-size: 400% 400%;
+      background-position: 0% 50%;
+    }
+}
