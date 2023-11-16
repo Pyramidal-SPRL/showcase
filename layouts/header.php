@@ -1,3 +1,4 @@
+<?php include './locale/core.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,7 @@
   <meta name="description" content="Pyramidal, une société à taille humaine pionnière dans le développement web et les services IT, propose des solutions sur mesure depuis plus de 15 ans.">
   <meta name="keywords" content="Pyramidal, SPRL, développement, web, services, IT, solutions sur mesure, expertise, technique, créativité">
   <meta name="author" content="elemis">
-  <title>Pyramidal - Développement Web & Services IT</title>
+  <title><?= $locale['global']['site_title'] ?> | <?= $locale['global']['site_description'] ?></title>
   <link rel="shortcut icon" href="./assets/img/pyramidal/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -46,22 +47,34 @@
                 <button type="button" class="btn-close btn-close-white d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="w-100 order-3 order-lg-2 d-lg-flex offcanvas-body">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/"><?= $locale['global']['homepage'] ?></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact"><?= $locale['global']['contact_us'] ?></a>
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://ezlink.be/">EZDiablink</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= $_SESSION['lang'] ?></a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "fr") ? "text-green fw-bold": "" ?>" href="?lang=fr"><img src="https://flagcdn.com/16x12/fr.png" class="pe-1" alt="french flag"> <?= $locale['global']['french'] ?></a></li>
+                      <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "en") ? "text-green fw-bold": "" ?>" href="?lang=en"><img src="https://flagcdn.com/16x12/us.png" class="pe-1" alt="usa flag"> <?= $locale['global']['english'] ?></a></li>
+                      <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "nl") ? "text-green fw-bold": "" ?>" href="?lang=nl"><img src="https://flagcdn.com/16x12/nl.png" class="pe-1" alt="dutch flag"> <?= $locale['global']['dutch'] ?></a></li>
+                      <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "de") ? "text-green fw-bold": "" ?>" href="?lang=de"><img src="https://flagcdn.com/16x12/de.png" class="pe-1" alt="german flag"> <?= $locale['global']['german'] ?></a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://my.pyramidal.be">Se connecter</a>
+                    <a class="btn btn-sm btn-outline-white rounded-pill" href="https://my.pyramidal.be"><?= $locale['global']['login'] ?></a>
                   </li>
                 </ul>
               </div>
               <div class="offcanvas-body d-lg-none order-4 mt-auto">
                 <div class="offcanvas-footer">
                   <div>
-                    <a href="mailto:first.last@email.com" class="link-inverse">info@pyramidal.be</a>
+                    <a href="mailto:info@pyramidal.be" class="link-inverse">info@pyramidal.be</a>
                     <br/> +32 (0) 496 26 65 69<br/>
                     <nav class="nav social social-white mt-4">
                       <a href="https://facebook.com" target="_blank"><i class="uil uil-facebook-f"></i></a>
