@@ -32,10 +32,8 @@ function setLanguage($lang = null) {
         $_SESSION['lang'] = 'en';
     } else if($lang == 'nl') {
         $_SESSION['lang'] = 'nl';
-    } else if($lang == 'de') {
-        $_SESSION['lang'] = 'de';
     } else {
-        $_SESSION['lang'] = 'en';
+        $_SESSION['lang'] = 'fr';
     }
 }
 

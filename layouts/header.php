@@ -55,7 +55,7 @@
                     <a class="nav-link" href="/contact"><?= $locale['global']['contact_us'] ?></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://ezlink.be/">EZDiablink</a>
+                    <a class="nav-link" href="https://ez-link.be/">EZDiablink</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-uppercase" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?= $_SESSION['lang'] ?></a>
@@ -63,7 +63,6 @@
                       <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "fr") ? "text-green fw-bold": "" ?>" href="?lang=fr"><img src="https://flagcdn.com/16x12/fr.png" class="pe-1" alt="french flag"> <?= $locale['global']['french'] ?></a></li>
                       <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "en") ? "text-green fw-bold": "" ?>" href="?lang=en"><img src="https://flagcdn.com/16x12/us.png" class="pe-1" alt="usa flag"> <?= $locale['global']['english'] ?></a></li>
                       <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "nl") ? "text-green fw-bold": "" ?>" href="?lang=nl"><img src="https://flagcdn.com/16x12/nl.png" class="pe-1" alt="dutch flag"> <?= $locale['global']['dutch'] ?></a></li>
-                      <li class="nav-item"><a class="dropdown-item <?= ($_SESSION['lang'] === "de") ? "text-green fw-bold": "" ?>" href="?lang=de"><img src="https://flagcdn.com/16x12/de.png" class="pe-1" alt="german flag"> <?= $locale['global']['german'] ?></a></li>
                     </ul>
                   </li>
                   <li class="nav-item">

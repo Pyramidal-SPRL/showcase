@@ -19,7 +19,7 @@
             <h4 class="widget-title  mb-3">Pyramidal</h4>
             <p class="mb-4">© 2023 Pyramidal. <br class="d-none d-lg-block"/><?= $locale['footer']['copyright']; ?></p>
             <nav class="nav social ">
-              <a href="https://facebook.com"><i class="uil uil-facebook-f"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61554745736425" target="_blank"><i class="uil uil-facebook-f"></i></a>
             </nav>
           </div>
         </div>
@@ -35,7 +35,7 @@
             <h4 class="widget-title  mb-3"><?= $locale['footer']['find_out_more']; ?></h4>
             <ul class="list-unstyled text-reset mb-0">
               <li><a href="#"></a></li>
-              <li><a href="https://ezlink.be">EZLink</a></li>
+              <li><a href="https://ez-link.be">EZLink</a></li>
               <li><a href="/contact"><?= $locale['global']['contact_us']; ?></a></li>
               <li><a href="https://my.pyramidal.be/login"><?= $locale['global']['login']; ?></a></li>
             </ul>
@@ -75,5 +75,6 @@
   </div>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/pyramidal.js"></script>
 </body>
 </html>

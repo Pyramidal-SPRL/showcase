@@ -6,7 +6,7 @@
             <h1 class="display-1 text-white fs-60 mb-4 px-md-15 px-lg-0"><?= $locale['homepage']['header']; ?></h1>
             <p class="lead fs-24 text-white lh-sm mb-7 mx-md-13 mx-lg-10"><?= $locale['homepage']['header_subtitle']; ?></p>
             <div>
-              <a class="btn btn-white rounded mb-10 mb-xxl-5"><?= $locale['homepage']['header_button']; ?></a>
+              <a class="btn btn-white rounded mb-10 mb-xxl-5" href="#notre-offre"><?= $locale['homepage']['header_button']; ?></a>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@
     <section class="wrapper bg-light">
       <div class="container pb-15 pb-md-17">
         <div class="row gx-md-5 gy-5 mt-n19 mb-14 mb-md-17">
-          <div class="col-md-6 col-xl-3">
+          <div class="col-md-6 col-xl-4">
             <div class="card shadow-lg">
               <div class="card-body">
                 <img src="./assets/img/icons/solid/touchscreen.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-green mb-3" alt="" />
@@ -32,7 +32,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3">
+          <div class="col-md-6 col-xl-4">
             <div class="card shadow-lg">
               <div class="card-body">
                 <img src="./assets/img/icons/solid/script.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-green mb-3" alt="" />
@@ -42,22 +42,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3">
+          <div class="col-md-6 col-xl-4">
             <div class="card shadow-lg">
               <div class="card-body">
                 <img src="./assets/img/icons/solid/gears.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-green mb-3" alt="" />
                 <h4><?= $locale['homepage']['services_third_title']; ?></h4>
                 <p class="mb-2"><?= $locale['homepage']['services_third_description']; ?></p>
-                <a href="/contact" class="more hover link-green"><?= $locale['global']['contact_us']; ?></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <div class="card shadow-lg">
-              <div class="card-body">
-                <img src="./assets/img/icons/solid/team.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-green mb-3" alt="" />
-                <h4><?= $locale['homepage']['services_fourth_title']; ?></h4>
-                <p class="mb-2"><?= $locale['homepage']['services_fourth_description']; ?></p>
                 <a href="/contact" class="more hover link-green"><?= $locale['global']['contact_us']; ?></a>
               </div>
             </div>
@@ -70,21 +60,21 @@
           </div>
         </div>
         <ul class="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column">
-          <li class="nav-item"> <a class="nav-link d-flex flex-row active" data-bs-toggle="tab" href="#tab2-1">
+          <li class="nav-item"> <a class="nav-link d-flex flex-row active offer-step-btn" data-bs-toggle="tab" href="#tab2-1">
               <div><img src="./assets/img/icons/solid/bulb.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-green me-4" alt="" /></div>
               <div>
                 <h4><?= $locale['homepage']['offer_first_step']; ?></h4>
                 <p><?= $locale['homepage']['offer_first_step_short']; ?></p>
               </div>
             </a> </li>
-          <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-2">
+          <li class="nav-item"> <a class="nav-link d-flex flex-row offer-step-btn" data-bs-toggle="tab" href="#tab2-2">
               <div><img src="./assets/img/icons/solid/compare.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-green me-4" alt="" /></div>
               <div>
                 <h4><?= $locale['homepage']['offer_second_step']; ?></h4>
                 <p><?= $locale['homepage']['offer_second_step_short']; ?></p>
               </div>
             </a> </li>
-          <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+          <li class="nav-item"> <a class="nav-link d-flex flex-row offer-step-btn" data-bs-toggle="tab" href="#tab2-3">
               <div><img src="./assets/img/icons/solid/delivery-box.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-green me-4" alt="" /></div>
               <div>
                 <h4><?= $locale['homepage']['offer_third_step']; ?></h4>
@@ -92,7 +82,7 @@
               </div>
             </a> </li>
         </ul>
-        <div class="tab-content mt-6 mt-lg-8">
+        <div class="tab-content mt-6 mt-lg-8" id="offer-step-content">
           <div class="tab-pane fade show active" id="tab2-1">
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div class="col-lg-6">
@@ -164,9 +154,9 @@
       </div>
     </section>
     <section class="wrapper bg-light">
-      <div class="container py-16 py-md-18">
-        <div class="card shadow-lg mt-n21 mt-md-n23">
-          <div class="row gx-0">
+      <div class="container"> <!-- py-16 py-md-18 -->
+        <!-- <div class="card shadow-lg mt-n21 mt-md-n23"> -->
+          <!-- <div class="row gx-0">
             <div class="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start" data-image-src="./assets/img/photos/tm2.jpg">
             </div>
             <div class="col-lg-6">
@@ -215,8 +205,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
         <div class="row mt-17">
           <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto text-center">
             <h2 class="fs-16 text-uppercase text-muted mb-3"><?= $locale['homepage']['projects_subtitle']; ?></h2>
@@ -227,73 +217,46 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <figure class="rounded mb-6"><img src="./assets/img/photos/pd7.jpg" srcset="./assets/img/photos/pd7@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/photos/pd7-full.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                <figure class="rounded mb-6"><img src="./assets/img/realisations/emilievanlaethem.png" srcset="./assets/img/photos/pd7@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/realisations/emilievanlaethem.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
                 <div class="project-details d-flex justify-content-center flex-column">
                   <div class="post-header">
-                    <h2 class="post-title h3"><a href="./single-project.html" class="link-dark">Nom du site</a></h2>
-                    <div class="post-category text-ash">Type de site</div>
+                    <h2 class="post-title h3"><a href="https://emilievanlaethem.be" target="_blank" class="link-dark">emilievanlaethem.be</a></h2>
+                    <div class="post-category text-ash">Professeur de chant</div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <figure class="rounded mb-6"><img src="./assets/img/photos/pd8.jpg" srcset="./assets/img/photos/pd8@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/photos/pd8-full.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                <figure class="rounded mb-6"><img src="./assets/img/realisations/f2architecte.png" srcset="./assets/img/photos/pd8@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/realisations/f2architecte.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
                 <div class="project-details d-flex justify-content-center flex-column">
                   <div class="post-header">
-                    <h2 class="post-title h3"><a href="./single-project2.html" class="link-dark">Nom du site</a></h2>
-                    <div class="post-category text-ash">Type de site</div>
+                    <h2 class="post-title h3"><a href="https://f2architecte.be" target="_blank" class="link-dark">f2architecte.be</a></h2>
+                    <div class="post-category text-ash">Architecte</div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <figure class="rounded mb-6"><img src="./assets/img/photos/pd9.jpg" srcset="./assets/img/photos/pd9@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/photos/pd9-full.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                <figure class="rounded mb-6"><img src="./assets/img/realisations/ezlink.png" srcset="./assets/img/photos/pd9@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/realisations/ezlink.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
                 <div class="project-details d-flex justify-content-center flex-column">
                   <div class="post-header">
-                    <h2 class="post-title h3"><a href="./single-project3.html" class="link-dark">Nom du site</a></h2>
-                    <div class="post-category text-ash">Type de site</div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <figure class="rounded mb-6"><img src="./assets/img/photos/pd10.jpg" srcset="./assets/img/photos/pd10@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/photos/pd10-full.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
-                <div class="project-details d-flex justify-content-center flex-column">
-                  <div class="post-header">
-                    <h2 class="post-title h3"><a href="./single-project.html" class="link-dark">Nom du site</a></h2>
-                    <div class="post-category text-ash">Type de site</div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <figure class="rounded mb-6"><img src="./assets/img/photos/pd11.jpg" srcset="./assets/img/photos/pd11@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/photos/pd11-full.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
-                <div class="project-details d-flex justify-content-center flex-column">
-                  <div class="post-header">
-                    <h2 class="post-title h3"><a href="./single-project2.html" class="link-dark">Nom du site</a></h2>
-                    <div class="post-category text-ash">Type de site</div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <figure class="rounded mb-6"><img src="./assets/img/photos/pd12.jpg" srcset="./assets/img/photos/pd12@2x.jpg 2x" alt="" /><a class="item-link" href="./assets/img/photos/pd12-full.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
-                <div class="project-details d-flex justify-content-center flex-column">
-                  <div class="post-header">
-                    <h2 class="post-title h3"><a href="./single-project3.html" class="link-dark">Nom du site</a></h2>
-                    <div class="post-category text-ash">Type de site</div>
+                    <h2 class="post-title h3"><a href="https://ez-link.be" target="_blank" class="link-dark">ez-link.be</a></h2>
+                    <div class="post-category text-ash">Logiciel pour hôpitaux</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mt-17">
+        <div class="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mt-17 mb-5">
           <div class="col-lg-6">
-            <div class="row gx-md-5 gy-5">
-              <div class="col-12">
-                <figure class="rounded mx-md-5"><img src="./assets/img/photos/g8.jpg" srcset="./assets/img/photos/g8@2x.jpg 2x" alt=""></figure>
+            <div class="row">
+              <div class="col-12 text-center">
+                <img src="./assets/img/equipe/yves_delvaux.jpg" width="250rem" alt="">
               </div>
-              <div class="col-md-6">
-                <figure class="rounded"><img src="./assets/img/photos/g9.jpg" srcset="./assets/img/photos/g9@2x.jpg 2x" alt=""></figure>
+              <div class="col-md-6 text-center">
+                <img src="./assets/img/equipe/coralie_gillard.jpg" width="250rem">
               </div>
-              <div class="col-md-6">
-                <figure class="rounded"><img src="./assets/img/photos/g10.jpg" srcset="./assets/img/photos/g10@2x.jpg 2x" alt=""></figure>
+              <div class="col-md-6 text-center">
+                <img src="./assets/img/equipe/gaspard_delvaux.jpg" width="250rem" alt="">
               </div>
             </div>
           </div>
